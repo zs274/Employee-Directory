@@ -3,35 +3,36 @@ import "./style.css";
 
 function Table() {
     return (
-        <Table bordered hover>
-            <thead>
+        <div className ="table table-bordered table-hover">
+            <thead class="thead-dark">
                 <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <td>[photo]</td>
+                    <td>[name]</td>
+                    <td>[phone]</td>
+                    <td>[email]</td>
                 </tr>
                 <tr>
-                    <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                <td>[photo]</td>
+                    <td>[name]</td>
+                    <td>[phone]</td>
+                    <td>[email]</td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td colSpan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                <td>[photo]</td>
+                    <td>[name]</td>
+                    <td>[phone]</td>
+                    <td>[email]</td>
                 </tr>
             </tbody>
-        </Table>
+        </div>
     )
 }
 
