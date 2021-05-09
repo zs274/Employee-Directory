@@ -9,7 +9,7 @@ const DataTable = () => {
 
     return (
         <div className ="table table-bordered table-hover">
-            <thead class="thead-dark">
+            <thead>
                 <tr>
                     {context.developerState.headings.map(({ name, width }) => {
                         return (
