@@ -1,22 +1,18 @@
+import React from 'react';
 import './App.css';
-import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Jumbotron from './components/Jumbotron/index.js';
-import Wrapper from './components/Wrapper/index.js';
-import DataTable from './components/DataTable/index.js';
+import Main from './components/Main';
+import Wrapper from './components/Wrapper';
+import Jumbotron from './components/Jumbotron';
+
 
 function App() {
   return (
-    <Router>
-      <div>
+      <div className="App">
         <Wrapper>
           <Jumbotron />
-          <Route exact path ="/" component={DataTable} />
+          <Main />
         </Wrapper>
       </div>
-    </Router>
-
-
   );
 }
 
