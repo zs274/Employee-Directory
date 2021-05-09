@@ -1,8 +1,6 @@
 import React from 'react';
 import SearchName from "../SearchName";
 
-import "./style.css";
-
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">

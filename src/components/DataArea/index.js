@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect } from "react"
 import DataTable from "../DataTable";
 import Navbar from "../Navbar";
 import API from "../../utils/API";
@@ -14,7 +14,7 @@ const DataArea = () => {
           { name: "Image", width: "10%", },
           { name: "Name", width: "10%", },
           { name: "Phone", width: "20%", },
-          { name: "Email", width: "20%", }
+          { name: "Email", width: "20%", },
         ]
       });
     
@@ -36,8 +36,7 @@ const DataArea = () => {
             } else if (b[heading] === undefined) {
               return -1;
             } else if (heading === "name") {
-// LocaleCompare will compare the current item to the previous item and place it above or below it accordingly,
-// meaning it will eventually put it into an order 
+
               return a[heading].first.localeCompare(b[heading].first);
             } else {
               return b[heading] - a[heading];
