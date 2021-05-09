@@ -2,17 +2,17 @@ import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Jumbotron from './components/Jumbotron/index.js';
-import Container from './components/Container/index.js';
-import Table from './components/Table/index.js';
+import Wrapper from './components/Wrapper/index.js';
+import DataTable from './components/DataTable/index.js';
 
 function App() {
   return (
     <Router>
       <div>
-        <Container>
+        <Wrapper>
           <Jumbotron />
-          <Route exact path ="/" component={Table} />
-        </Container>
+          <Route exact path ="/" component={DataTable} />
+        </Wrapper>
       </div>
     </Router>
 
