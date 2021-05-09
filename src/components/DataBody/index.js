@@ -39,3 +39,4 @@ const DataBody = () => {
     );
   }
   
+export default DataBody;
